@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+Stamina Fitness - Gym Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A complete, feature-rich gym management dashboard built with React and Tailwind CSS. This application provides a comprehensive interface for managing members, coaches, inventory, payments, and viewing sales reports, with distinct user roles for administrators and coaches.
+Key Features
 
-## Available Scripts
+    Role-Based Authentication: Secure login system with separate views and permissions for Admins and Coaches.
 
-In the project directory, you can run:
+    Admin Dashboard: A comprehensive overview of gym statistics, including total revenue, active members, and coach listings.
 
-### `npm start`
+    Full CRUD Functionality: Easily Create, Read, Update, and Delete records for:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+        Members
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+        Coaches
 
-### `npm test`
+        Membership Plans
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+        Equipment Inventory
 
-### `npm run build`
+    Point of Sale (POS): A dedicated interface for recording new member payments against their chosen plans.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Dynamic Sales Reporting: View payment history and filter sales reports by date to track revenue over specific periods.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Search and Filter: Instantly find information in all management tables with live search functionality.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Modern UI/UX: Built with Tailwind CSS for a clean, responsive design, and includes a non-intrusive notification system for user feedback.
 
-### `npm run eject`
+    Profile Management: Admins and coaches can view and manage their profile information.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Frontend: React.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    Styling: Tailwind CSS
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    Icons: Lucide React
 
-## Learn More
+    State Management: React Hooks (useState, useContext, useMemo, useCallback)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Database: The current version uses a simulated, in-memory database via React Context for demonstration purposes.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Local Setup and Installation
 
-### Code Splitting
+To run this project on your local machine, please follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    Prerequisites: Make sure you have Node.js and npm installed.
 
-### Analyzing the Bundle Size
+    Clone the Repository (or Create a New React App):
+    If you've cloned this repository, just run npm install. Otherwise, create a new project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    npx create-react-app gym-management-app
+    cd gym-management-app
 
-### Making a Progressive Web App
+    Install Dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    npm install lucide-react
 
-### Advanced Configuration
+    Add Tailwind CSS:
+    Open the public/index.html file and add this script tag to the <head> section:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    <script src="https://cdn.tailwindcss.com"></script>
 
-### Deployment
+    Add the Source Code:
+    Copy the code from this project's App.js file and replace the contents of your src/App.js.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    Start the Server:
 
-### `npm run build` fails to minify
+    npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    The application will be available at http://localhost:3000.
+
+Login Credentials
+
+Use the following credentials to access the application:
+
+    Admin Account:
+
+        Email: admin@stamina.fit
+
+        Password: password
+
+    Coach Account:
+
+        Email: coach@stamina.fit
+
+        Password: password123
